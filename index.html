@@ -86,12 +86,29 @@
       #orange {
         background-color: orange;
       }
+
+      @media screen  and (max-width: 500px){
+        
+          #empty{
+            display: none;
+          }
+          h1{
+            font-size: 15px;
+            flex-grow: 1;
+            text-underline-offset: 8px;
+          }
+          .btn{
+            width: 20px;
+            height: 20px;
+            margin: 2px;
+          }
+      }
     </style>
   </head>
   <body>
     <div id="container">
       <header>
-        <div></div>
+        <div id="empty"></div>
         <h1>Background Color Switcher</h1>
         <div>
           <span class="btn" id="white" onclick="changeBG('#F2F4F4')"></span>
